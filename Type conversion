@@ -1,0 +1,19 @@
+Converter                                 Converts from                         Converts to
+========================================================================================================================
+list(X)                                   String, tuple, any iterable               List
+[n for n in X]  
+
+tuple(X)                                  String, tuple, any iterable               Tuple
+
+''.join(X)                                Iterable of strings                       String
+
+eval(S)                                   String                                    Any object with a syntax (expression)
+
+int(S [, base]),a float(S)                String or number                          Integer, float
+
+repr(X),                                  Any py object                             String (repr is as code str is user-friendly)
+str(X)
+
+ord(C),                                   Character,                                integer code, 
+
+chr(I)                                    integer code                              Character 
