@@ -1,0 +1,55 @@
+infile = open('data.txt', 'r'),
+infile = open('data.txt', 'w'),--create if not exists
+infile = open('data.txt', 'a'),--append to an existing file or create and append if not exists
+
+Creates input file ('r' means read as text, while 'rb' reads binary with no line-break translation). 
+The filename string (e.g., 'data.txt') maps to the current working di- rectory, unless it includes a directory path prefix
+(e.g., 'c:\\dir\\data.txt'). The mode argument (e.g., 'r') is optional and defaults to 'r'.
+
+infile.read()
+Reads entire file, returning its contents as a single string. In text mode ('r'), line-ends are translated to '\n'. In binary mode ('rb'), the result string can contain non- printable characters (e.g., '\0'). In Python 3.0, text mode decodes Unicode text into a str string, and binary returns unaltered content in a bytes.
+
+infile.read(N)
+Reads at most N more bytes (1 or more); empty at end-of-file.
+
+infile.readline()
+Reads next line (through end-of-line marker); empty at end-of-file.
+
+infile.readlines()
+Reads entire file into a list of line strings. See also file iter- ators, discussed next.
+
+for line in infile:
+Uses file iterators to step through lines in a file automatically. 
+
+Also available in all other iteration contexts (e.g., [line[:-1] for line in open('filename')]). 
+The iteration for line in file obj:has an effect similar to for line in file obj.readlines():,but the file iterat or version does  not load the entire file into memory and so is more efficient.
+
+
+file.close()
+Manual close to free resources (Python currently auto- closes files if still open when they are garbage-collected). See also the upcoming file object context manager discussion.
+
+file.tell()
+Returns the file’s current position.
+
+file.seek(offset [, whence])
+Sets the current file position to offset for random access. whence can be 0 (offset from front), 1 (offset +/– from cur- rent position), or 2 (offset from end). whence defaults to 0.
+
+file.isatty()
+Returns 1 if the file is connected to a tty-like interactive device.
+
+file.flush()
+Flushes the file’s stdio buffer. Useful for buffered pipes, if another process (or human) is reading. Also useful for files created and read in the same process.
+
+file.truncate([size])
+Truncates file to, at most, size bytes (or current position if no size is passed). Not available on all platforms.
+
+file.fileno()
+Gets file number (descriptor integer) for file. This roughly converts file objects to descriptors that can be passed to tools
+in the os module. Use os.fdopen to convert a descriptor to a file object, socketobj.makefile to convert a socket to a file 
+object, and io.StringIO (StringIO.StringIO in Python 2.X) to convert a string to an object with a file-like interface.
+
+file.mode
+Mode string (e.g., 'r') passed to open function.
+
+file.name
+String name of corresponding external file.
