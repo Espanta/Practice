@@ -1,0 +1,40 @@
+alist = ['spam', [42, 3.1415], 1.23, {}]
+
+alist[0]
+'spam'
+
+print(alist[1][0])
+42
+
+alist
+=======
+alist.append(x)
+Inserts the single object x at the end of alist, changing the list in-place.
+
+alist.extend(x)
+Inserts each item in any iterable x at the end of alist in- place (an in-place +). Similar to alist[len(alist):] = list(x).
+
+alist.sort(key=None, reverse=False)
+Sorts alist in-place, in ascending order by default. If passed, key specifies a function of one argument that is used to extract or compute a comparison value from each list element. If reverse is passed and true, the list elements are sorted as if each comparison were reversed. For ex- ample: alist.sort(key=str.lower, reverse=True). See also the sorted() built-in function.
+
+alist.reverse()
+Reverses items in alist in-place.
+
+alist.index(x [, i [, j]])
+Returns the index of the first occurrence of object x in alist; raises an exception if not found. This is a search method. If i and j are passed, it returns the smallest k such thats[k] == xandi <= k < j.
+
+alist.insert(i, x)
+Inserts object x into alist at offset i (like alist[i:i] = [x], for positive i).
+
+alist.count(x)
+Returns the number of occurrences of x in alist.
+
+alist.remove(x)
+Deletes the first occurrence of object x from alist; raises an exception if not found. Same as del alist[alist.index(x)].
+
+
+=============List generators
+
+[x * x for x in range(10)] 
+# List comp. [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
