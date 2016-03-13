@@ -1,0 +1,48 @@
+student={'name':'Saeid','Family':'Abol','Age':30}
+
+print(student['Age'])
+
+ppl = dict(name='Bob', age=45, job=('mgr', 'dev'))
+print(ppl['name'])
+
+
+
+adict.keys()
+All keys in adict. In Python 2.X, this returns a list. In Py- thon 3.0, it returns an iterable view object described ear- lier. for k in adict: also supports keys iteration.
+adict.values()
+All stored values in adict. In Python 2.X, this returns a list. In Python 3.0, it returns an iterable view object de- scribed earlier.
+adict.items()
+Tuple pairs (key, value), one for each entry in adict. In Python 2.X, this returns a list. In Python 3.0, it returns an iterable view object described earlier.
+
+
+adict.clear()
+Removes all items from adict.
+
+adict.copy()
+Returns a shallow (top-level) copy of adict.
+
+dict1.update(dict2)
+Merges all of dict2’s entries into dict1, in-place, similar tofor (k, v) in dict2.items(): dict1[k] = v.InPython 2.4, also accepts an iterable of key/value pairs, as well as keyword arguments (dict.update(k1=v1, k2=v2)).
+
+adict.get(key [, default])
+Similar to adict[key], but returns default (or None if no default) instead of raising an exception when key is not found in adict.
+
+adict.setdefault(key, [, default])
+Same as adict.get(key, default), but also assigns key to default if it is not found in adict.
+
+adict.popitem()
+Removes and returns an arbitrary (key, value) pair.
+
+adict.pop(k [, default])
+Returns adict[k] if k in adict (and removes k); else, re- turns default.
+
+adict.fromkeys(seq [, value])
+Creates a new dictionary with keys from seq and values set to value.
+The following methods are available in Python 2.X only:
+
+adict.has_key(k)
+Returns True if adict has a key k, or False otherwise. In Python 2.X only, this method is equivalent to k in adict, but is not generally recommended; it is removed in Python 3.0.
+
+adict.iteritems(), adict.iterkeys(), adict.itervalues() 
+Returns an iterator over key/value pairs, keys only, or val- ues only. 
+In Python 3.0, these are removed because keys(), values(), and items() return iterable view objects.
