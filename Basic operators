@@ -1,0 +1,71 @@
+This is the list of useful structures I need in Python.
+
+print('My Name is %s'%'Saeid')
+print('My Name is %i'%14)
+print('My Name is %f'%14.0)
+
+s String
+c Character (int or str) 
+d Decimal (base 10 integer) 
+i Integer 
+
+===========
+
+X if Y else Z
+X or Y
+X and Y
+not X
+X in Y,X not in Y
+X is Y,X is not Y
+X < Y,X <= Y,X > Y,X >= Y
+X == Y,X != Y X| Y
+X^ Y
+X& Y
+X << Y,X >> Y X + Y,X – Y
+X * Y, X % Y, X / Y,X // Y -X, +X
+ ̃X
+X ** Y X[i] X[i:j:k] X(...) X.attr (...) [...]
+==============
+X< Y
+X <= Y
+X> Y
+X >= Y
+X == Y
+X != Y
+X is Y
+X is not Y X<Y< Z not X
+X or Y
+X and Y
+===============Membership
+X in S
+X not in S
+S1 + S2
+S * N,N * S S[i]
+S[i:j], S[i:j:k]
+len(S) min(S), max(S)
+iter(S)
+for X in S:,
+[expr for X in S],
+map(func, S), etc.
+==========
+X + Y,
+X – Y
+X * Y
+X / Y
+X // Y
+X % Y
+-X, +X
+X | Y
+X & Y
+X ^ Y
+============== List
+S=[1,2,3,4,4]
+del S[i]
+S.append(5)
+print(S.pop(2)) 
+============= Loop
+for k in D:
+    something
+    
+
+
