@@ -1,3 +1,8 @@
+S='Saeid Abolfazli'
+print(S.find('bol',1,10))
+
+S.find(sub, [, start [, end]])
+==========is*()
 S.capitalize()
 S.center(width, [, fill]) S.count(sub [, start [, end]]) S.encode([encoding [,errors]]) S.endswith(suffix [, start [, end]]) S.expandtabs([tabsize])
 S.find(sub [, start [, end]]) S.format(fmtstr, *args, **kwargs) S.index(sub [, start [, end]]) S.isalnum()
